@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国SEGA-《刺猬索尼克》官方资源</title>
+    <style>
+        :root {
+            --sonic-blue: #1b6cb0;
+            --sonic-red: #e52521;
+            --sonic-yellow: #f7d038;
+            --sonic-light-blue: #40bcf4;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial Rounded MT Bold', 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--sonic-blue), var(--sonic-light-blue));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .sonic-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--sonic-red);
+        }
+        
+        h2 {
+            color: var(--sonic-blue);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2 i {
+            margin-right: 10px;
+            color: var(--sonic-red);
+        }
+        
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .video-card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .video-thumbnail {
+            height: 180px;
+            background-color: var(--sonic-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+        }
+        
+        .video-info {
+            padding: 1rem;
+        }
+        
+        .video-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--sonic-blue);
+        }
+        
+        .video-stats {
+            display: flex;
+            justify-content: space-between;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .likes {
+            color: var(--sonic-red);
+            font-weight: bold;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, var(--sonic-light-blue), var(--sonic-blue));
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .contact-card {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--sonic-yellow);
+        }
+        
+        .contact-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--sonic-blue);
+        }
+        
+        footer {
+            background: var(--sonic-blue);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="sonic-icon">🦔</div>
+        <h1>中国SEGA-《刺猬索尼克》官方资源</h1>
+        <p class="subtitle">官方视频作品、点赞统计与联系信息</p>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2><i>▶️</i> 官方视频作品</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">🎬</div>
+                    <div class="video-info">
+                        <div class="video-title">《刺猬索尼克3》电影预告</div><li><a href="https://b23.tv/NAOZgCA"><i class="fas fa-home"></i> 电影</a></li>
+                        <div class="video-stats">
+                            <span>观看次数: 1.2M</span>
+                            <span class="likes">❤️ 85K</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">🎮</div>
+                    <div class="video-info">
+                        <div class="video-title">索尼克未知边境游戏演示</div><li><a href="https://b23.tv/0x4Gyx1"><i class="fas fa-home"></i> 索尼克游戏</a></li>
+                        <div class="video-stats">
+                            <span>观看次数: 890K</span>
+                            <span class="likes">❤️ 64K</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">📺</div>
+                    <div class="video-info">
+                        <div class="video-title">索尼克Prime动画预告</div><li><a href="https://b23.tv/ep754854"><i class="fas fa-home"></i> 哔哩哔哩动画</a></li>
+                        <div class="video-stats">
+                            <span>观看次数: 750K</span>
+                            <span class="likes">❤️ 52K</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">⚡</div>
+                    <div class="video-info">
+                        <div class="video-title">索尼克大乱斗-游戏！</div>
+                        <div class="video-stats">
+                            <span>观看次数: 680K</span>
+                            <span class="likes">❤️ 48K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2><i>📊</i> 点赞统计</h2>
+            <div class="stats-grid">
+                <div class="stat-card pulse">
+                    <div class="stat-number">2.5M</div>
+                    <div class="stat-label">总点赞数</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number">249K</div>
+                    <div class="stat-label">月均点赞</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number">85%</div>
+                    <div class="stat-label">点赞率</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number">1.9M</div>
+                    <div class="stat-label">粉丝数量</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2><i>📞</i> 官方联系信息</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-title">官方社交媒体</div>
+                    <p>微博: @刺猬索尼克_官方</p>
+                    <p>抖音: 索尼克官方</p>
+                    <p>Bilibili: SEGA世嘉</p>
+                    <p>快手:刺猬索尼克社区</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-title">商务合作</div>
+                    <p>邮箱: partnership@sonic-cn.com</p>
+                    <p>电话: 400-123-4567</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-title">粉丝服务</div>
+                    <p>客服邮箱: support@sonic-cn.com</p>
+                    <p>客服热线: 400-765-4321</p>
+                </div>
+            </div>
+            <p style="margin-top: 1.5rem; font-style: italic; color: #666;">
+                注意: 以上联系方式为示例，实际联系方式请参考官方最新公告。
+            </p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2023-2025 刺猬索尼克官方 - 本页面仅为示例展示 中国 </p>
+    </footer>
+</body>
+</html>
